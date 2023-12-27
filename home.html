@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome CSS -->
@@ -63,11 +66,12 @@
             text-align: center;
             color: black;
             display: flex;
-            align-items: center;
+           align-items: center;
             justify-content: end;
           border: 2px solid #CD201F;
         border-top-left-radius: 20%;
-            
+        background-image:linear-gradient(to right,white ,#f7f2ee);
+        
         }
 
             .hero img{
@@ -75,7 +79,7 @@
                 height: auto;
                 object-fit: cover;
                 margin-left:1em ;
-                
+                border-radius: 10%;
             }
 
         
@@ -129,10 +133,13 @@
          .first{
             margin-top: 3rem;
         }
-        .hero img{
+        .hero-image{
             width:100%;
             margin:0;
             padding:0;
+            opacity: 0; /* Initially set to transparent */
+            animation: fadeInImage 2s forwards; /* Fade-in animation with a delay */
+          
         }
         .hero h1{
             margin: 2rem;
@@ -151,11 +158,9 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        text-shadow: 2px 2px 4px #000000;
         }
-.hero p{
-    text-decoration: underline;
-    
-}
+
 
 
 @media (min-width: 767px) and (max-width: 1005px) {
@@ -215,6 +220,89 @@
         
     }
 }
+.hero p{
+    background-color: #bea493;
+    text-align: center;
+    margin-top: 4rem;
+    border-radius: 10%;
+    font-family: "cinzel";
+    
+}
+
+.line{
+    width: 70%;
+    height: 0.2rem;
+    background-color: #CD201F;
+    margin-bottom: 4rem;
+    margin-left: 20%;
+}
+
+.hero-text{
+    opacity: 0; /* Initially set to transparent */
+            animation: fadeInText 1.5s forwards; /* Fade-in animation */
+            transform: translateY(0); /* Initial position for parallax effect */
+            transition: transform 0.5s ease-in-out; /* Parallax effect */
+}
+
+
+@keyframes fadeInText {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInImage {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .signature{
+            font-family: "Great Vibes";
+            letter-spacing: 0.5rem;
+            font-size:5rem;
+        }
+        .hero-links a{
+            margin-bottom: 1rem;
+            border: 1px solid #CD201F;
+            
+        }
+        .hero-links a:hover{
+            color:white ;
+            background-color: #CD201F;
+        }
+
+        .portfolio-link {
+            background-color: #CD201F;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .portfolio-link:hover{
+            color: #CD201F;
+            background-color: #f7f2ee;
+            border: 2px solid #CD201F;
+        }
+        .about p{
+            text-indent: 0.5rem;
+        }
+        .about-text{
+            background-color: #bea493;
+            font-family: "";
+            width:150%;
+            transform: scale(1.2);
+            translate: -1rem;
+        }
+
+        .animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 
@@ -275,28 +363,123 @@
 
     <!-- Section with Bootstrap Grid -->
     <section class="section">
-        <div class="container mt-3 ">
-            <div class="row hero p-3 shadow-sm   ">
+        <div class="container-fluid shadow-md ">
+            <div class="row hero p-3 shadow-sm  " id="hero-container">
                 <!-- Text Column -->
-                <div class="col-md-4 ">
+                <div class="col-md-4 hero-text  " id="parallax">
+                    <h2 class="signature">GG</h2>
+                    <div class="line fw-bold"></div>
                <h1 class="display-4   fw-bold shadow-sm p-3 bg-white rounded">GOJI GLORY</h1>
-                    <!-- Subtitle -->
-                    <p class=" lead">Nigerian supermodel & Entrepreneur</p>
+                    <!-- Subtitle -->                                                                                                                                                   
+                    <h4 class="display-5 lead">Nigerian supermodel & Entrepreneur</h4>          
+                    <p class="lead  p-3 shadow-sm p-3 animated   ">Passionate model with a unique sense of style and a commitment to diversity in the fashion industry. Ready to redefine beauty standards and make a statement on the runway.</p>
                 </div>
 
                 <!-- Image Column -->                                                                        
-                <div class="col-md-8">                                                                                    
-                    <img src="./././images/goji2.jpg" alt="Model Image" class="image img-fluid shadow-md   bg-white rounded ">
+                <div class="col-md-8 hero-image">  
+                     
+                  <img src="images/goji4.jpg" alt="" class="img-fluid " >
+                  
                 </div>
+
+                
+    <div class="container mt-5">
+        <div class="row ">
+            <!-- Left Links -->
+            <div class="col-md-3 col-sm-3 hero-links">                         
+                <a href="#" class="btn  mr-2  ">Collaborations
+                    
+                </a>
+            </div>
+
+            <!-- Center Link (Prominent) -->                                    
+            <div class="col-md-6 text-center col-sm-6 ">                                    
+                <a href="#" class=" portfolio-link btn  btn-lg ">PORTFOLIO
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Right Links -->
+            <div class="col-md-3 col-sm-3 hero-links">
+                <a href="#" class="btn  ml-2 ">Lifestyle
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+            </div>
+         </div>
+    </section>
+   
+    <section class="about mt-5">
+        <h1 class="signature text-center">About me</h1>
+        <div class="container ">                                                                      
+            <div class="row align-items-center g-0 justify-content-between">
+                <div class="col-md">
+                    <div class="line"></div>
+                </div>
+
+               <div class="col-md-5 p-3 animated">
+                <img src="images/goji3.jpg" alt="" class="img-fluid">
+               </div>
+
+               <div class="col-md-4 p-3 about-text  animated shadow-sm rounded ">                                   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et tenetur suscipit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia consectetur odit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit modi sit.</p>
+                
+               </div>
+
+               <div class="col-md-1">
+                <div class="line"></div>
+               </div>
+
             </div>
         </div>
     </section>
-
-
 
     <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+    <!-- Parallax Effect for Text -->
+
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('scroll', function () {
+            const heroContainer = document.getElementById('hero-container');
+            const parallax = document.getElementById('parallax');
+            const scrolled = window.scrollY;                                                            
+            const maxTranslation = heroContainer.offsetHeight * 0.5; // Adjust multiplier for intensity
+
+            // Apply the parallax effect with a limit
+            parallax.style.transform = 'translateY(' + Math.min(scrolled * 0.1, maxTranslation) + 'px)';
+        });
+
+
+
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    document.querySelectorAll('.animated').forEach(item => {
+        observer.observe(item);
+    });
+});
+</script>
+
 </body>
 </html>
