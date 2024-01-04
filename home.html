@@ -14,339 +14,9 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Your Modeling Portfolio</title>
-    <style>
-        /* Custom styles for icon placement */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: white;
-        }
-        .nav-link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: black;
-            font-weight: 700;
-            margin-right: 0.5rem;
-        }
-       
-
-        .social-icons {
-            display: flex;
-            align-items: center;
-            font-size: 2rem;
-        }
-
-        .social-icons a {
-            margin-left: 3rem; /* Adjust the spacing between social icons */
-            color: black; /* Adjust the color of social icons */
-            font-weight: 700;
-        
-        }
-
-        .fa-facebook:hover{
-            color: #1877F2 ;
-        }
-.fa-youtube:hover{
-    color: #CD201F;
-}
-        /* Custom styles to center brand */
-       .navbar-brand {
-            position: absolute;
-            left: 50%;
-        
-            transform: translateY(0%);
+    <link rel="stylesheet" href="style.css">
     
-        }
-   /* Custom styles for the hero section */
-   .hero {
-            margin-top: 7rem;
-            text-align: center;
-            color: black;
-            display: flex;
-            justify-content: end;
-          border: 2px solid #CD201F;
-        border-top-left-radius: 20%;
-        background-image:linear-gradient(to right,white ,#f7f2ee);
         
-        }
-
-            .hero img{
-                max-width: 100%;
-            height:auto;
-                margin-left:1em ;
-                border-radius: 10%;
-                object-fit: contain;
-            }
-
-        
-      
-/* Custom styles for the toggle button */
-.navbar-toggler {
-    border: none; /* Remove borders */
-    font-weight: 700; /* Make it bold */
-}
-.navbar-brand img{
-            height: auto;
-            max-width: 2rem;
-            object-fit: cover;
-        
-    
-        }
-
-        
-/* Media query for small screens */
-@media (max-width: 767px) {
-   
-    img {
-            width: 100%;
-            height: auto;
-        
-            object-fit: cover;
-        }
-        .about-text{
-            margin-left: 8rem;
-            text-align: center;
-            margin-top: -30%;
-            
-        }
-        .about .line{
-            margin-bottom: -2rem;
-            translate: 10px;
-        }
-
-        .social-icons a{
-            font-size: 1rem;
-            font-weight: 700;
-            margin-left: 1rem;
-        }
-
-
-       
-      .navbar-brand{
-            left: 50%;
-            
-            margin-left: 1.5rem;
-            transform: translateY(-20%);
-
-            
-        }
-       
-        .navbar-brand img{
-            height: auto;
-            max-width: 5rem;
-            object-fit: cover;
-            margin-left: 2rem;
-        }
-         .first{
-            margin-top: 3rem;
-        }
-        .hero-image{
-            width:100%;
-        margin-right: 1.5rem;
-            padding:0;
-            opacity: 0; /* Initially set to transparent */
-            animation: fadeInImage 2s forwards; /* Fade-in animation with a delay */
-        
-        }
-        .hero h1{
-            margin: 2rem;
-        }
-}
-
-
-.hero h1{
-            letter-spacing: 0.5rem;
-            font-family: 'Cinzel', serif;
-            font-size: 3rem;
-            background-image: linear-gradient(to right, #fe2c54,#5e0231);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        text-shadow: 2px 2px 4px #000000;
-        }
-
-.signature{
-    font-family: 'Great Vibes';
-    color: #CD201F;
-    font-weight: bolder;
-}
-
-@media (min-width: 767px) and (max-width: 1005px) {
-   .navbar-brand img{
-    margin-left: 4rem;
-   }
-
-   
-}
-
-
-
-@media (min-width: 993px) and (max-width: 1016px) {
-   .navbar-brand img{
-    margin-right: 7rem;
-    translate: -4rem;
-   }
-
-   
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
- .hero h1{
-    letter-spacing: normal;
-    
- }
-
-   
-}
-
-@media (max-width: 390px){
-
-    .social-links a{
-        font-size:0.2rem;
-    margin-left: -1rem;
-
-    }
-    .navbar-brand{
-        transform: translate(-40%,50%);
-        
-    }
-   .navbar-brand img{
-        width: 1000px;
-        height: auto;
-    }
-    .navbar{
-        position: relative;
-        margin-bottom: -30%;
-        box-shadow: none;
-
-    }
-    .navbar-toggler{
-        position: absolute;
-        top: 1rem;
-        right: 0;
-        
-    }
-}
-.hero p{
-    background-color: #bea493;
-    text-align: center;
-margin-top: -3rem;
-    border-radius: 10%;
-    font-family: "cinzel";
-    
-}
-
-.line{
-    width: 70%;
-    height: 0.2rem;
-    background-color: #CD201F;
-    margin-bottom: 4rem;
-    margin-left: 20%;
-}
-
-.hero-text{
-    opacity: 0; /* Initially set to transparent */
-            animation: fadeInText 1.5s forwards; /* Fade-in animation */
-            transform: translateY(0); /* Initial position for parallax effect */
-            transition: transform 0.5s ease-in-out; /* Parallax effect */
-}
-
-
-@keyframes fadeInText {
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInImage {
-            to {
-                opacity: 1;
-            }
-        }
-
-        .hero-links a{
-            margin-bottom: 1rem;
-            border: 1px solid #CD201F;
-            
-        }
-        .hero-links a:hover{
-            color:white ;
-            background-color: #CD201F;
-        }
-
-        .portfolio-link {
-            background-color: #CD201F;
-            margin-bottom: 1rem;
-            color: white;
-        }
-        .portfolio-link:hover{
-            color: #CD201F;
-            background-color: #f7f2ee;
-            border: 2px solid #CD201F;
-        }
-        .about p{
-            text-indent: 0.5rem;
-        }
-        .about-text{
-            font-family: "";
-            transform: scale(1.2);
-            translate: -4rem;
-            background-color: white;
-            text-align: center;
-        }
-        .about{                         
-            background-color:#f7f2ee;
-            padding: 1rem;
-        }
-        .about a{
-            color: #CD201F;
-            font-weight:700;
-    
-            text-transform: capitalize;
-        }
-        .about a:hover{
-            color :white;
-            background-color: #CD201F;
-        }
-
-        .animated {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        .visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-         /* Additional styles if needed */
-         .card {
-            position: relative;
-        }
-
-        .card-img-overlay {
-            position: absolute;
-            background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
-            color: white;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            z-index: 1;
-        }
-
-        .card h5{
-            font-weight: 700;
-            font-size: 2rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -368,29 +38,29 @@ margin-top: -3rem;
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ">
                 <li class="nav-item active">
-                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="#">
+                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="home.html">
                         <i class="fas fa-home"></i>
                         Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="#">
+                <li class="nav-item">                                                           
+                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="#portfolio">
                         <i class="fas fa-images"></i>
                         Portfolio
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="#">
+                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="about.html">
                         <i class="fas fa-user"></i>
                         About
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="#">
+                    <a class="nav-link shadow-sm p-3 bg-white rounded" href="contact.html">
                         <i class="fas fa-envelope"></i>
                         Contact
-                    </a>
+                    </a>j
                 </li>
             </ul>
         </div>     
@@ -430,22 +100,22 @@ margin-top: -3rem;
     <div class="container mt-5">
         <div class="row ">
             <!-- Left Links -->                                             
-            <div class="col-md-3 col-sm-3 hero-links ">                         
-                <a href="#" class="btn  mr-2 shadow-sm  ">Collaborations
+            <div class="col-md-3 col-sm-3 hero-links ">                                    
+                <a href="#projects" class="btn  mr-2 shadow-sm  ">Projects
                     
                 </a>
             </div>
 
             <!-- Center Link (Prominent) -->                                    
             <div class="col-md-6 text-center col-sm-6 ">                                    
-                <a href="#" class=" portfolio-link btn  btn-lg shadow-sm ">PORTFOLIO
+                <a href="#portfolio" class=" portfolio-link btn  btn-lg shadow-sm ">PORTFOLIO
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
 
             <!-- Right Links -->
             <div class="col-md-3 col-sm-3 hero-links">
-                <a href="#" class="btn  ml-2 shadow-sm ">Lifestyle
+                <a href="#lifestyle" class="btn  ml-2 shadow-sm ">Lifestyle
                     
                 </a>
             </div>
@@ -488,10 +158,11 @@ margin-top: -3rem;
     
     <div class="container mt-5">
 
-        <div class="row  text-center">
+        <div class="row  text-center infos">
 
             <!-- Portfolio Card -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 shadow-sm  rounded">
+                <a href="#" id="portfolio"  data-toggle="modal" data-target="#portfolioModal">
                 <div class="card ">
                     <img src="images/portfolio.jpg" class="card-img-top" alt="Portfolio Image">
                     <div class="card-img-overlay">
@@ -499,10 +170,12 @@ margin-top: -3rem;
                         <p class="card-text">Explore my portfolio showcasing various modeling projects.</p>
                     </div>
                 </div>
+            </a>
             </div>
 
             <!-- Lifestyle Card -->
             <div class="col-md-4 mb-4">
+                <a href="lifestyle.html" id="lifestyle">
                 <div class="card">
                     <img src="images/lifestyle.jpg" class="card-img-top" alt="Lifestyle Image">
                     <div class="card-img-overlay">
@@ -510,21 +183,53 @@ margin-top: -3rem;
                         <p class="card-text">Discover glimpses of my everyday life and personal style.</p>
                     </div>
                 </div>
+                </a>
             </div>
 
             <!-- Collaborations Card -->
             <div class="col-md-4 mb-4">
+                <a href="projects.html" id="projects">
                 <div class="card">
                     <img src="images/collaborations.jpg" class="card-img-top" alt="Collaborations Image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Collaborations</h5>
+                        <h5 class="card-title">Projects</h5>
                         <p class="card-text">Highlights from collaborative projects with amazing talents.</p>
                     </div>
                 </div>
+                </a>
             </div>
+        
 
         </div>
 
+    </div>
+    
+    
+    <!-- Portfolio Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel">Portfolio Pictures</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your portfolio pictures here -->
+                    <div class="container-fluid">
+                        <div class="row justify-content-center align-items-center">
+                    
+                    <div class="col-md-12">
+                    <img src="images/goji2.jpg" class="img-fluid" alt="Portfolio Picture 1">
+                    <img src="images/goji3.jpg" class="img-fluid" alt="Portfolio Picture 2">
+                    <!-- Add more pictures as needed -->
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
             

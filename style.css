@@ -1,0 +1,352 @@
+ /* Custom styles for icon placement */
+ body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.social-icons a {
+    margin-left: 3rem; /* Adjust the spacing between social icons */
+    color: black; /* Adjust the color of social icons */
+    font-weight: 700;
+
+}
+
+
+.fa-facebook:hover{
+    color: #1877F2 ;
+}
+.fa-youtube:hover{
+color: #CD201F;
+}
+.fa-instagram:hover{
+    color: rgb(226, 41, 16);
+}
+/* Custom styles to center brand */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+
+    transform: translateY(0%);
+
+}
+/* Custom styles for the hero section */
+.hero {
+    margin-top: 7rem;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: end;
+  border: 2px solid #CD201F;
+border-top-left-radius: 20%;
+background-image:linear-gradient(to right,white ,#f7f2ee);
+
+}
+
+    .hero img{
+        max-width: 100%;
+    height:auto;
+        margin-left:1em ;
+        border-radius: 10%;
+        object-fit: contain;
+    }
+
+
+
+/* Custom styles for the toggle button */
+.navbar-toggler {
+border: none; /* Remove borders */
+font-weight: 700; /* Make it bold */
+}
+.navbar-brand img{
+    height: auto;
+    max-width: 2rem;
+    object-fit: cover;
+
+
+}
+
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+
+img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+.about-text{
+    margin-left: 8rem;
+    text-align: center;
+    margin-top: -30%;
+    
+}
+.about .line{
+    margin-bottom: -2rem;
+    translate: 10px;
+}
+
+.social-icons a{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+
+
+.navbar-brand{
+    left: 50%;
+    
+    margin-left: 1.5rem;
+    transform: translateY(-20%);
+
+    
+}
+
+.navbar-brand img{
+    height: auto;
+    max-width: 5rem;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+ .first{
+    margin-top: 3rem;
+}
+.hero-image{
+    width:100%;
+margin-right: 1.5rem;
+    padding:0;
+    opacity: 0; /* Initially set to transparent */
+    animation: fadeInImage 2s forwards; /* Fade-in animation with a delay */
+
+}
+.hero h1{
+    margin: 2rem;
+}
+}
+
+
+.hero h1{
+    letter-spacing: 0.5rem;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #fe2c54,#5e0231);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+text-shadow: 2px 2px 4px #000000;
+}
+
+.signature{
+font-family: 'Great Vibes';
+color: #CD201F;
+font-weight: bolder;
+}
+
+@media (min-width: 767px) and (max-width: 1005px) {
+.navbar-brand img{
+margin-left: 4rem;
+}
+
+
+}
+
+
+
+@media (min-width: 993px) and (max-width: 1016px) {
+.navbar-brand img{
+margin-right: 7rem;
+translate: -4rem;
+}
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.hero h1{
+letter-spacing: normal;
+
+}
+
+
+}
+
+@media (max-width: 390px){
+
+.social-links a{
+font-size:0.2rem;
+margin-left: -1rem;
+
+}
+.navbar-brand{
+transform: translate(-40%,50%);
+
+}
+.navbar-brand img{
+width: 1000px;
+height: auto;
+}
+.navbar{
+position: relative;
+margin-bottom: -30%;
+box-shadow: none;
+
+}
+.navbar-toggler{
+position: absolute;
+top: 1rem;
+right: 0;
+
+}
+}
+.hero p{
+background-color: #bea493;
+text-align: center;
+margin-top: -3rem;
+border-radius: 10%;
+font-family: "cinzel";
+
+}
+
+.line{
+width: 70%;
+height: 0.2rem;
+background-color: #CD201F;
+margin-bottom: 4rem;
+margin-left: 20%;
+}
+
+.hero-text{
+opacity: 0; /* Initially set to transparent */
+    animation: fadeInText 1.5s forwards; /* Fade-in animation */
+    transform: translateY(0); /* Initial position for parallax effect */
+    transition: transform 0.5s ease-in-out; /* Parallax effect */
+}
+
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInImage {
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-links a{
+    margin-bottom: 1rem;
+    border: 1px solid #CD201F;
+    
+}
+.hero-links a:hover{
+    color:white ;
+    background-color: #CD201F;
+}
+
+.portfolio-link {
+    background-color: #CD201F;
+    margin-bottom: 1rem;
+    color: white;
+}
+.portfolio-link:hover{
+    color: #CD201F;
+    background-color: #f7f2ee;
+    border: 2px solid #CD201F;
+}
+.about p{
+    text-indent: 0.5rem;
+}
+.about-text{
+    font-family: "";
+    transform: scale(1.2);
+    translate: -4rem;
+    background-color: white;
+    text-align: center;
+}
+.about{                         
+    background-color:#f7f2ee;
+    padding: 1rem;
+}
+.about a{
+    color: #CD201F;
+    font-weight:700;
+
+    text-transform: capitalize;
+}
+.about a:hover{
+    color :white;
+    background-color:#CD201F;
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ /* Additional styles if needed */
+ .card {
+    position: relative;
+}
+
+.card-img-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+
+.card h5{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.infos h5{
+    
+    font-family: 'cinzel';
+    font-size: 700;
+    background-image: linear-gradient(white,white);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+text-shadow: 2px 2px 4px #CD201F;
+color: #CD201F;
+}
+
+#portfolioModal  img{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    background-color: transparent;
+}
