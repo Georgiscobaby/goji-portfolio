@@ -350,3 +350,35 @@ color: #CD201F;
     object-fit: cover;
     background-color: transparent;
 }
+
+
+#carouselExampleControls img{
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+.bride{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.bridal{
+    background-color: #f7f2ee;
+}
+.bridal h2{
+    color: #CD201F;
+    font-weight: 700;
+}
+.bridal{
+    color: black;
+}
+  
