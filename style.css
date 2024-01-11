@@ -55,7 +55,8 @@ color: #CD201F;
   border: 2px solid #CD201F;
 border-top-left-radius: 20%;
 background-image:linear-gradient(to right,white ,#f7f2ee);
-
+align-items: center;
+overflow: hidden;
 }
 
     .hero img{
@@ -362,6 +363,15 @@ color: #CD201F;
     .logo {
         display: none;
     }
+
+    .lash{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    background-color: white
+    }
+    .lash-line{
+        display: none;
+    }
 }
 
 .bride{
@@ -382,3 +392,123 @@ color: #CD201F;
     color: black;
 }
   
+.businesses{
+    
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel';
+    letter-spacing: 0.5rem;
+
+}
+
+.businesses h5:hover{
+    text-decoration: underline;
+}
+.busy{
+    align-items: center;
+    justify-content: space-between;
+
+}
+.busy a{
+    color: #CD201F;
+
+    font-weight: 700;
+}
+
+.business{
+    background-color: #f7f2ee;
+}
+
+
+
+  /* Animation for image overlay */
+  .businesses .card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .businesses:hover .card-img-overlay {
+    opacity: 1;
+  }
+
+  /* Animation for business descriptions */
+  .thrift-desc,
+  .lash-desc {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .busy:hover .thrift-desc,
+  .busy:hover .lash-desc {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Animation for lines */
+  .lash-line {
+    width: 0;
+    border-top: 2px solid #dc3545; /* Use your preferred color */
+    transition: width 0.5s ease-in-out;
+  }
+
+  .busy:hover .lash-line {
+    width: 50%;
+  }
+
+  
+  /* Animation for card overlay */
+  .infos .card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .infos .card:hover .card-img-overlay {
+    opacity: 1;
+  }
+
+
+
+
+  /* Navbar and links animation */
+.navbar {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar a.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add a class to the navbar when it's scrolled */
+.navbar-scrolled {
+    background-color: #CD201F; /* Change to the desired background color */
+}
+        
+
+/* Animation for the social icons */
+.social-icons i {
+    transition: color 0.3s ease-in-out;
+}
+
+
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #CD201F;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInDown 1s ease-out 3s forwards; /* Fade in after 3 seconds */
+}
+
+
+
+.hero-text {
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.hero-image {
+    animation: fadeInRight 1s ease-out forwards;
+}
