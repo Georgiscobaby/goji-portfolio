@@ -505,10 +505,10 @@ color: #CD201F;
 
 
 
-.hero-text {
+.hero-text,.about-image{
     animation: fadeInLeft 1s ease-out forwards;
 }
 
-.hero-image {
+.hero-image,.about-text {
     animation: fadeInRight 1s ease-out forwards;
 }
