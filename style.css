@@ -360,7 +360,7 @@ color: #CD201F;
 }
 
 @media (max-width: 768px) {
-    .logo {
+    .navbar-brand {
         display: none;
     }
 
@@ -371,6 +371,9 @@ color: #CD201F;
     }
     .lash-line{
         display: none;
+    }
+    .navbar-toggler{
+        margin-bottom: 0.5rem;
     }
 }
 
