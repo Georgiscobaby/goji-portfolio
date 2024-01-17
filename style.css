@@ -106,7 +106,7 @@ img {
 }
 
 .social-icons a{
-    font-size: 1rem;
+   /* font-size: 1rem;*/
     font-weight: 700;
     margin-left: 1rem;
 }
@@ -193,10 +193,10 @@ letter-spacing: normal;
 
 @media (max-width: 390px){
 
-.social-links a{
+.social-links a{/*
 font-size:0.2rem;
 margin-left: -1rem;
-
+*/
 }
 .navbar-brand{
 transform: translate(-40%,50%);
@@ -647,12 +647,6 @@ color: #CD201F;
 
 .contact .businesses{
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contact-icons{
-   justify-content: space-around;
-   align-items: end;
-   margin-left: 20%;
+    justify-content: space-between;
+    align-items:center;
 }
