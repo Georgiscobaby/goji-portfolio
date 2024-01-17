@@ -60,6 +60,7 @@ border-top-left-radius: 20%;
 background-image:linear-gradient(to right,white ,#bea493);
 align-items: center;
 overflow: hidden;
+border-bottom-right-radius: 20%;
 }
 
     .hero img{
@@ -643,6 +644,7 @@ color: #CD201F;
     background-size: cover;
     object-fit: contain;
     background-position-y: 50%;
+    background-position-x: 50%;
     height: 70vh;
     padding: 0;
     
@@ -669,7 +671,7 @@ color: #CD201F;
     align-items: last baseline;
 }
 .contact span{
-    color: #CD201F;
+
     font-weight: 900;
 }
 
@@ -684,13 +686,13 @@ color: #CD201F;
 }
 
 
-
 .contact .row{
     justify-content: flex-end;
     align-items:center;
     flex-direction: column-reverse;
     gap: 1rem;
-    font-size: smaller;
+    letter-spacing: normal;
+    
 }
 .contact h6{
     font-size: small;
