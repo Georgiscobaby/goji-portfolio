@@ -409,7 +409,6 @@ color: #CD201F;
 .busy{
     align-items: center;
     justify-content: space-between;
-
 }
 .busy a{
     color: #CD201F;
@@ -417,10 +416,9 @@ color: #CD201F;
     font-weight: 700;
 }
 
-.business{
+.business .container-fluid{
     background-color: #f7f2ee;
 }
-
 
 
   /* Animation for image overlay */
@@ -433,11 +431,12 @@ color: #CD201F;
     opacity: 1;
   }
 
+
   /* Animation for business descriptions */
   .thrift-desc,
   .lash-desc {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px);                                            
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 
@@ -571,7 +570,7 @@ color: #CD201F;
 }
 .testimonials .carousel .item {
 	color: #999;
-	font-size: 14px;
+	font-size: 1rem;
     text-align: center;
 	overflow: hidden;
     min-height: 290px;
@@ -632,4 +631,28 @@ color: #CD201F;
 .carousel-indicators li.active {	
 	background: #555;		
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+#contact .card{
+    
+    background-image: url(images/port9a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position-y: 50%;
+    height: 70vh;
+    padding: 0;
+}
+
+
+.contact .businesses{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-icons{
+   justify-content: space-around;
+   align-items: end;
+   margin-left: 20%;
 }
