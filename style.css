@@ -645,12 +645,59 @@ color: #CD201F;
     background-position-y: 50%;
     height: 70vh;
     padding: 0;
-    width: 100vw;
+    
 }
-
+.contact .businesses{
+    width: 100%;
+}
+.contact{
+    background-image: url(images/port9a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    
+}
 
 .contact .businesses{
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
+}
+
+.contact .row{
+    justify-content: space-between;
+    align-items: last baseline;
+}
+.contact span{
+    color: #CD201F;
+    font-weight: 900;
+}
+
+
+@media(max-width:768px){
+    
+.contact .businesses{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+
+
+.contact .row{
+    justify-content: flex-end;
+    align-items:center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    font-size: smaller;
+}
+.contact h6{
+    font-size: small;
+}
+.contact button{
+    transform: translateY(-40%);
+}
+
+
 }
