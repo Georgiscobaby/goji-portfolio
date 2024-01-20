@@ -61,6 +61,7 @@ background-image:linear-gradient(to right,white ,#bea493);
 align-items: center;
 overflow: hidden;
 border-bottom-right-radius: 20%;
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
     .hero img{
@@ -71,7 +72,9 @@ border-bottom-right-radius: 20%;
         object-fit: contain;
     }
 
-
+.hero h4{
+    font-family: 'Merriweather', serif;
+}
 
 /* Custom styles for the toggle button */
 .navbar-toggler {
@@ -161,7 +164,7 @@ text-shadow: 2px 2px 4px #000000;
 }
 
 .signature{
-font-family: 'Great Vibes';
+font-family: 'cinzel';
 color: #CD201F;
 font-weight: bolder;
 }
@@ -222,13 +225,6 @@ top: 1rem;
 right: 0;
 
 }
-}
-.hero p{
-background-color: #bea493;
-text-align: center;
-margin-top: -3rem;
-border-radius: 10%;
-font-family: "cinzel";
 
 }
 
@@ -702,4 +698,26 @@ color: #CD201F;
 }
 
 
+}
+
+.privacy{
+    margin-top: 5rem;
+}
+
+.privacy h1{
+    background: #CD201F;
+    text-align: center;
+    color: white;
+}
+
+.contact .row p{
+    letter-spacing: normal;
+}
+
+.bridal{
+    margin-top: 50rem;
+}
+
+.infos .card{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
