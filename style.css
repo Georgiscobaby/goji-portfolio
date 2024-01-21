@@ -283,10 +283,13 @@ opacity: 0; /* Initially set to transparent */
     color: white;
     background-color: #CD201F;
 }
+.portfolio-link{
+    color:white;
+    background-color: #CD201F;
+}
 
-.hero-links a:hover{
-    color: #CD201F;
-    background-color: white;
+.hero-links a{
+    display: none;
 }
 }
 
