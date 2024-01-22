@@ -4,102 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <title>Navbar Scroll Color Change</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Goji-model</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your custom styles here */
+        .navbar-scrolled {
+            background-color: #CD201F; /* Change this to your desired background color on scroll */
+        }
 
-        
+        /* Navbar link styles */
+        .navbar-scrolled .navbar-nav .nav-link {
+            color: white !important; /* Change this to your desired text color on scroll */
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <section class="">
-<div class="container-fluid   ">                                                                                                                                                                                                                                                                  
-    <nav class="navbar navbar-expand-lg  navbar-light  justify-content-between fixed-top">                                                                                  
-        <div class="social-icons mr-5  fw-bold">                                                
-            <a href="#" target="_blank"><i class="fab fa-facebook shadow-sm  bg-white rounded "></i></a>
-                    <a href="https://youtu.be/XctW1eWGjxk?si=104OcaM5k8ox_W6U" target="_blank"><i class="fab fa-youtube shadow-sm  bg-white rounded "></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter shadow-sm   bg-white rounded "></i></a> 
-                    <a href="https://www.instagram.com/gojiglory_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram shadow-sm  bg-white rounded"></i></a>
-        </div>                                                                                          
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <!-- Your Navbar content goes here -->
+            <a class="navbar-brand" href="#">Your Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- Add more navbar items as needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <a class="navbar-brand mt-5  mr-5 fw-bold text-center " href="home.html"><img src="./././images/G.png"></a>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav ">
-                <li class="nav-item active">
-                    <a class="nav-link shadow-sm   rounded" href="home.html">
-                        <i class="fas fa-home"></i>
-                        Home
-                        <span class="sr-only"></span>
-                    </a>
-                </li>
-                <li class="nav-item">                                                                             
-                    <a class="nav-link shadow-sm   rounded" href="#portfolio">
-                        <i class="fas fa-images"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link shadow-sm   rounded" href="about.html">
-                        <i class="fas fa-user"></i>
-                        About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link shadow-sm   rounded" href="#contact">
-                        <i class="fas fa-envelope"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>     
-
-         <button class="navbar-toggler mb-3  shadow rounded" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>                                           
-         </button>      
-    </nav>                                                                                                                                                                                                                                                                                                                                                                                                                                              
-</div>
-</section>         
-
-
-    <!-- Section with Bootstrap Grid -->
-    <section class="section">
-        <div class="container-fluid shadow-md ">
-            <div class="row hero p-3 shadow-sm  " id="hero-container">
-                <!-- Text Column -->
-                <div class="col-md-4 hero-text " id="parallax">
-                
-                    <div class="line fw-bold mt-5"></div>
-               <h1 class="display-4 mb-5  fw-bold shadow-sm p-3 bg-white rounded">GOJI GLORY</h1>
-                    <!-- Subtitle -->                                                                                                                                                                
-                    <h4 class="display-5 lead mb-3">Nigerian supermodel & Entrepreneur</h4>   
-                    <div class="line fw-bold "></div>                                                                                                                                                                                                       
-
-                </div>
-
-                <!-- Image Column -->                                                                        
-                <div class="col-md-8 hero-image"   >  
-                     
-                  <img src="images/goji4.jpg" alt="" class="img-fluid " >
-                  
-                </div>
-
-                
+             
     <div class="container-fluid mt-5">
         <div class="row justify-content-evenly ">
             <!-- Left Links -->                                             
@@ -346,99 +292,31 @@
         </div>
     </div>
 
-
-<section class="contact  mt-5" id="contact">
-    
-<div class="container-fluid ">
-    <div class="row text-center justify-content-center">
-    <div class="col-md-12 text-center ">
-                    
-        <div class="card ">                                                                                                          
-           
-            <div class="card-img-overlay  businesses">                                                                                                                                     
-                <button class="btn btn-outline-light btn-lg p-3 shadw-sm rounded mt-5" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-
-                <div class="social-icons contact-icons  fw-bold">                                   
-                    <a href="#" target="_blank"><i class="fab fa-facebook shadow-sm  bg-white rounded "></i></a>                                                                            
-                    <a href="https://youtu.be/XctW1eWGjxk?si=104OcaM5k8ox_W6U" target="_blank"><i class="fab fa-youtube shadow-sm  bg-white rounded "></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter shadow-sm  bg-white rounded "></i></a> 
-                    <a href="https://www.instagram.com/gojiglory_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram shadow-sm  bg-white rounded"></i></a>
-                  
-                </div>             
-                <div class="container-fluid">                                                                            
-                    <div class="row">
-                        <div class="col-md-6">
-                           <h6 class="mute fw-bold text-center">
-                            <p>&copy; <span id="copyrightYear"></span>GCStudios</p>
-                           </h6>
-                           <h6 class="mute fw-bold text-center">
-                            All rights reserved.
-                           </h6>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="privacy.html" class="text-white">Privacy Policy</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        </div>
-        </div>
-
-        
-
-</div>
-</section>
-
-
-    <!-- Contact Form Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">                                                  
-                 <!---  <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>-->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- Add your contact form elements here -->
-                    <form action="mailto:georgeclint56@mail.com" method="get">
-                        <!-- Contact form fields go here -->
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-            
     <!-- Bootstrap JS and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Custom Script for Navbar Scroll Color Change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the navbar
+            var navbar = document.getElementById("mainNav");
 
+            // Listen for the scroll event
+            window.addEventListener("scroll", function () {
+                // Check if the page has been scrolled
+                if (window.scrollY > 50) {
+                    // Add the class to change background color and text color
+                    navbar.classList.add("navbar-scrolled");
+                } else {
+                    // Remove the class if the page is at the top
+                    navbar.classList.remove("navbar-scrolled");
+                }
+            });
+        });
+    </script>
 
-<script src="main.js"></script>
 </body>
+
 </html>

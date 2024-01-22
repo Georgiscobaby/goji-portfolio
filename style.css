@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: white;
+    overflow-x: hidden;
     
 }
 .nav-link {
@@ -21,6 +22,7 @@
     display: flex;
     align-items: center;
     font-size: 2rem;
+    
 }
 
 .social-icons a {
@@ -45,7 +47,7 @@ color: #CD201F;
     position: absolute;
     left: 50%;
 
-    transform: translateY(0%);
+    transform: translateY(-70%);
 
 }
 /* Custom styles for the hero section */
@@ -524,8 +526,17 @@ color: #CD201F;
 .navbar-scrolled {
     background-color: #CD201F; /* Change to the desired background color */
 }
-        
 
+
+        /* Navbar link styles */
+        .navbar-scrolled .navbar-nav .nav-link {
+            color: white !important; /* Change this to your desired text color on scroll */
+        }
+        
+.navbar-scrolled .navbar-brand{
+    background-color: white;
+    border-radius: 50%;
+}
 /* Animation for the social icons */
 .social-icons i {
     transition: color 0.3s ease-in-out;
@@ -666,17 +677,16 @@ color: #CD201F;
     width: 100%;
 }
 .contact{
-    background-image: url(images/port9a.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 70%;
-    
+   
 }
 
 .contact .businesses{
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items:center;
+    width: 100vw;
+    
+    margin-left: -1rem;
 }
 
 .contact .row{
